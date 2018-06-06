@@ -38,9 +38,6 @@
     if (animationController == self.shrinkAnimator) {
         return self.interactiveTransition;
     }
-    if (animationController == self.expandAnimator) {
-        return  self.interactiveTransition;
-    }
     return nil;
 }
 
@@ -66,11 +63,7 @@
     if (operation == UINavigationControllerOperationPush && [fromVC isKindOfClass:[XSQMasterViewController class]] && [toVC isKindOfClass:[XSQDetailViewController class]]) {
         
         XSQMasterViewController *masterViewController = (XSQMasterViewController *)fromVC;
-        
-        //z beign
-        [self.interactiveTransition updateInteractiveTransition:0]; 
-        masterViewController.interactiveTransition = self.interactiveTransition;
-        //z end
+         
         
         if (!self.expandAnimator) {
             self.expandAnimator = [[XSQExpandAnimatorObject alloc] initWithThumbView:masterViewController.thumbView];

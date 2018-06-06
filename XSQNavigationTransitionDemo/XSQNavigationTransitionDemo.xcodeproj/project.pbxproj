@@ -17,6 +17,9 @@
 		1521AF3F1C08640B00BF0E08 /* XSQShrinkAnimatorObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1521AF3E1C08640B00BF0E08 /* XSQShrinkAnimatorObject.m */; };
 		15C56F181C0C711A0024DE5D /* XSQExpandAnimatorObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C56F171C0C711A0024DE5D /* XSQExpandAnimatorObject.m */; };
 		15CE24171C0AB14600169C1D /* XSQNavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CE24161C0AB14600169C1D /* XSQNavigationControllerDelegate.m */; };
+		8555F8ED20C7DA7C0099E831 /* ZPopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8555F8E720C7DA7C0099E831 /* ZPopAnimation.m */; };
+		8555F8EE20C7DA7C0099E831 /* ZNavDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8555F8E920C7DA7C0099E831 /* ZNavDelegate.m */; };
+		8555F8EF20C7DA7C0099E831 /* ZPushAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8555F8EC20C7DA7C0099E831 /* ZPushAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,12 @@
 		15C56F171C0C711A0024DE5D /* XSQExpandAnimatorObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSQExpandAnimatorObject.m; sourceTree = "<group>"; };
 		15CE24151C0AB14600169C1D /* XSQNavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSQNavigationControllerDelegate.h; sourceTree = "<group>"; };
 		15CE24161C0AB14600169C1D /* XSQNavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSQNavigationControllerDelegate.m; sourceTree = "<group>"; };
+		8555F8E720C7DA7C0099E831 /* ZPopAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPopAnimation.m; sourceTree = "<group>"; };
+		8555F8E820C7DA7C0099E831 /* ZPopAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPopAnimation.h; sourceTree = "<group>"; };
+		8555F8E920C7DA7C0099E831 /* ZNavDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZNavDelegate.m; sourceTree = "<group>"; };
+		8555F8EA20C7DA7C0099E831 /* ZNavDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZNavDelegate.h; sourceTree = "<group>"; };
+		8555F8EB20C7DA7C0099E831 /* ZPushAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPushAnimation.h; sourceTree = "<group>"; };
+		8555F8EC20C7DA7C0099E831 /* ZPushAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPushAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +80,7 @@
 		1521AF1F1C0855FC00BF0E08 /* XSQNavigationTransitionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8555F8E620C7DA710099E831 /* testA */,
 				15CE24151C0AB14600169C1D /* XSQNavigationControllerDelegate.h */,
 				15CE24161C0AB14600169C1D /* XSQNavigationControllerDelegate.m */,
 				1521AF3D1C08640B00BF0E08 /* XSQShrinkAnimatorObject.h */,
@@ -99,6 +109,19 @@
 				1521AF211C0855FC00BF0E08 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8555F8E620C7DA710099E831 /* testA */ = {
+			isa = PBXGroup;
+			children = (
+				8555F8EA20C7DA7C0099E831 /* ZNavDelegate.h */,
+				8555F8E920C7DA7C0099E831 /* ZNavDelegate.m */,
+				8555F8E820C7DA7C0099E831 /* ZPopAnimation.h */,
+				8555F8E720C7DA7C0099E831 /* ZPopAnimation.m */,
+				8555F8EB20C7DA7C0099E831 /* ZPushAnimation.h */,
+				8555F8EC20C7DA7C0099E831 /* ZPushAnimation.m */,
+			);
+			name = testA;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,10 +196,13 @@
 				1521AF3C1C085BB800BF0E08 /* XSQDetailViewController.m in Sources */,
 				1521AF391C0856A600BF0E08 /* XSQNavigationController.m in Sources */,
 				15C56F181C0C711A0024DE5D /* XSQExpandAnimatorObject.m in Sources */,
+				8555F8EE20C7DA7C0099E831 /* ZNavDelegate.m in Sources */,
 				1521AF281C0855FC00BF0E08 /* XSQMasterViewController.m in Sources */,
+				8555F8ED20C7DA7C0099E831 /* ZPopAnimation.m in Sources */,
 				1521AF251C0855FC00BF0E08 /* AppDelegate.m in Sources */,
 				1521AF3F1C08640B00BF0E08 /* XSQShrinkAnimatorObject.m in Sources */,
 				1521AF221C0855FC00BF0E08 /* main.m in Sources */,
+				8555F8EF20C7DA7C0099E831 /* ZPushAnimation.m in Sources */,
 				15CE24171C0AB14600169C1D /* XSQNavigationControllerDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,9 +9,12 @@
 #import "XSQNavigationController.h"
 #import "XSQNavigationControllerDelegate.h"
 
+#import "ZNavDelegate.h"
+
 @interface XSQNavigationController ()
 
-@property (nonatomic, strong) XSQNavigationControllerDelegate *navigationDelegate;
+//@property (nonatomic, strong) XSQNavigationControllerDelegate *navigationDelegate;
+@property (nonatomic, strong) ZNavDelegate *navigationDelegate;
 
 @end
 
@@ -19,11 +22,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    _navigationDelegate = [XSQNavigationControllerDelegate new];
+    _navigationDelegate = [ZNavDelegate new];
     self.delegate = _navigationDelegate;
-    
     self.navigationBarHidden = YES;
+    
 }
 
 - (NSArray *)childViewControllers {

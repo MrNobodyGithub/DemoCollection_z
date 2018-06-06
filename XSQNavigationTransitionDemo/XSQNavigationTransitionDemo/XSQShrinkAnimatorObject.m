@@ -36,9 +36,8 @@
     UIView *toView = [transitionContext viewForKey:UITransitionContextToViewKey];
     UIView *fromView = [transitionContext viewForKey:UITransitionContextFromViewKey];
     
-//    CGRect thumbFrame = [[transitionContext containerView] convertRect:self.thumbView.bounds fromView:self.thumbView];
-    CGRect thumbFrame =  CGRectMake(0, MLScreenHeight, MLScreenWidth, MLScreenHeight);
-    
+    CGRect thumbFrame = [[transitionContext containerView] convertRect:self.thumbView.bounds fromView:self.thumbView];
+ 
     [[transitionContext containerView] insertSubview:toView belowSubview:fromView];
     
     [UIView animateWithDuration:[self transitionDuration:transitionContext]
